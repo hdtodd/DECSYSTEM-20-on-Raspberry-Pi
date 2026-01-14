@@ -205,7 +205,7 @@ You've now created and installed the klh10 emulator:
 </sub>
 
 > [!NOTE]
-> If you have trouble compiling the code, `cd DEC20Sources/klh10/tmp` then `../autogen.sh --bindir=$KLH10_HOME` to re-generate the configuration files and then `make -C bld-kl` again.  You may need to install `autoconf` if it is not already installed: `$sudo port install autoconf` on Pi. 
+> If you have trouble compiling the code, `cd DEC20Sources/klh10/tmp` then `../autogen.sh --bindir=$KLH10_HOME` to re-generate the configuration files and then `make -C bld-kl` again.  You may need to install `autoconf` if it is not already installed: `$sudo port install autoconf` on Mac. 
 
 We'll install the `read20` program in your DEC20 production directory, too:
 
