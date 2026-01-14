@@ -98,7 +98,7 @@ And, finally, we need to install the pcap development library in order for the D
 
 As for the Pi, you'll need to pick a hostname and IP address for your guest DEC20 and add them to your Mac's `/etc/hosts` table.  If you're using a local DNS system to serve your LAN (on your router, for example), enter your DEC20's hostname and IP address into that DNS table and apply it.
 
-The Mac Xcode tools *may* compile the DEC20 code, but but my attempt failed so I used [MacPorts](https://www.macports.org/) tools.  `brew` would probably work as well, if you're already using it, and you'd need to install the same set of tools in `brew` as I did with MacPorts. [I'm not suggesting that you install the telnetd or ftpd _server_ components; just the clients).
+The Mac Xcode tools *may* compile the DEC20 code, but but my attempt failed so I used [MacPorts](https://www.macports.org/) tools.  `brew` would probably work as well, if you're already using it, and you'd need to install the same set of tools in `brew` as I did with MacPorts. [I'm not suggesting that you install the telnetd or ftpd _server_ components; just the clients].
 
 * $sudo port selfupdate
 * $sudo port upgrade outdated
