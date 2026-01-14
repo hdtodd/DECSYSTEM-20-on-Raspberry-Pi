@@ -103,7 +103,6 @@ The Mac Xcode tools *may* compile the DEC20 code, but but my attempt failed so I
 * $sudo port selfupdate
 * $sudo port upgrade outdated
 * $sudo port install gcc
-* $sudo port install autoconf
 * $sudo port install inetutils (or install from `brew` or download inetutils-2.4.tar.gz from https://ftp.gnu.org/gnu/inetutils/ and compile and install) to get telnet and ftp for the Mac.
  
 The Apple Mac comes with pcap installed, so we don't need to do anything more to prepare for networking support.
@@ -204,7 +203,11 @@ You've now created and installed the klh10 emulator:
 	dpni20  dprpxx  dptm03  enaddr  flushed  kn10-kl  tapedd  udlconv  uexbconv  vdkfmt  wfconv  wxtest
 ```
 </sub>
-We'll install the `read20` program there, too:
+
+> [!NOTE]
+> If you have trouble compiling the code, `cd DEC20Sources/klh10/tmp; ../autogen.sh --bindir=$KLH10_HOME` to re-generate the configuration files and then `make -C bld-kl` again.  You may need to install `autoconf` if it is not already installed: `$sudo port install autoconf` on Pi.
+
+We'll install the `read20` program in your DEC20 production directory, too:
 
 * $cd ../../tapeutils
 * $make
