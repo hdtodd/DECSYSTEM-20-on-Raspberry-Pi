@@ -192,7 +192,7 @@ to set that up (**and add that to ~/.profile to avoid having to do it in the fut
 ```
 $cd DEC20sources/klh10
 $mkdir tmp; cd tmp
-$../autogen.sh --bindir=$KLH10_HOME
+$../configure
 $make -C bld-kl
 $make -C bld-kl install
 ```
@@ -205,7 +205,7 @@ You've now created and installed the klh10 emulator:
 </sub>
 
 > [!NOTE]
-> If you have trouble compiling the code, `cd DEC20Sources/klh10/tmp; ../autogen.sh --bindir=$KLH10_HOME` to re-generate the configuration files and then `make -C bld-kl` again.  You may need to install `autoconf` if it is not already installed: `$sudo port install autoconf` on Pi.
+> If you have trouble compiling the code, `cd DEC20Sources/klh10/tmp` then `../autogen.sh --bindir=$KLH10_HOME` to re-generate the configuration files and then `make -C bld-kl` again.  You may need to install `autoconf` if it is not already installed: `$sudo port install autoconf` on Pi. 
 
 We'll install the `read20` program in your DEC20 production directory, too:
 
