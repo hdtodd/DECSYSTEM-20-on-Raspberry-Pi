@@ -253,7 +253,7 @@ Edit your /DEC20/klt20.ini file to have the `devdef` for your network interface 
 	devdef ni0 564 ni20 dedic=true ifmeth=pcap ifc=xxx
 ```
 
-We still have to make some changes in the TOPS-20 internal configuration files in order to make the nework connection, but we're finished with the configuration work on the Pi or Mac for now. 
+We still have to make some changes in the TOPS-20 internal configuration files in order to make the network connection, but we're finished with the configuration work on the Pi or Mac for now. 
 
 ### Testing the DEC20 System
 
