@@ -86,9 +86,6 @@ which should present the vsFTPd prompt:
 	220 (vsFTPd 3.0.5)
 	Name (<hostname>:<username>):
 ```
-We need to install the `autoconf` package that is used to configure the DEC20 emulator for compilation:
-
-* $sudo apt-get install autoconf
 
 And, finally, we need to install the pcap development library in order for the DEC20 to be able to use the Pi's network:
 
@@ -205,7 +202,7 @@ You've now created and installed the klh10 emulator:
 </sub>
 
 > [!NOTE]
-> If you have trouble compiling the code, `cd DEC20Sources/klh10/tmp` then `../autogen.sh --bindir=$KLH10_HOME` to re-generate the configuration files and then `make -C bld-kl` again.  You may need to install `autoconf` if it is not already installed: `$sudo port install autoconf` on Mac. 
+> If you have trouble compiling the code, `cd DEC20Sources/klh10/tmp` then `../autogen.sh --bindir=$KLH10_HOME` to re-generate the configuration files and then `make -C bld-kl` again.  You may need to install `autoconf` if it is not already installed: `$sudo port install autoconf` on Mac or `$sudo apt-get install autoconf` on Pi.
 
 We'll install the `read20` program in your DEC20 production directory, too:
 
