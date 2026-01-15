@@ -185,7 +185,7 @@ The klh10 system uses KLH10_HOME to point to that directory, so:
 
 * $KLH10_HOME=/DEC20; export KLH10_HOME
 
-to set that up (**and add that to ~/.profile to avoid having to do it in the future.**).  Now we can compile and install the DEC20 emulator:
+to set that up (**and add that to ~/.profile to avoid having to do it in the future**).  Now we can compile and install the DEC20 emulator:
 ```
 $cd DEC20sources/klh10
 $mkdir tmp; cd tmp
