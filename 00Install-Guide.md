@@ -312,6 +312,8 @@ You're now logged into the DEC20 as "operator".
 
 ### Getting Comfortable
 
+Note that TOPS-20 commands and guide words are **not** case sensitive:  `VdIr`, `VDIR`, and `vdir` all print a verbose directory.
+
 Many commands offer guidewords and command word completion, and most accept abbreviated commands.  "?" lists the alternatives at that point in a command, and [ESC key] offers command completion. You'll see that below, for example: "$wor ?" shows what you can enter as allowed sizes for the account's working storage, and "$$wor inf[ESC]" completed to "infINITY".  Using those keys can help guide you through completing most commands.  TOPS-20 commands are generally not senstive to case, so you can use capital letters or lower-case letters.  And control characters are generally represented with an `^` character before them, but type them by holding down the "CONTROL" or "CTRL" button and typing the character.  So `^E` means hold down CONTROL and type `E`.
 
 Following MRC's advice, create a personal account for yourself and give it access to privileges.  Log in as OPERATOR, and then:
