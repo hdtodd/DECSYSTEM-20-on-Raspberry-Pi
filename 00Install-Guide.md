@@ -180,7 +180,7 @@ To compile the klh10 emulator, we'll follow a subset of the instructions in `~/D
 
 Though you'll run the emulator as root, you'll find it convenient for maintenance tasks to have ownership of that directory, so
 
-* $sudo chown <your account name>:<your group name> /DEC20 (or whatever you chose as directory name/location)
+* $sudo chown  \<your account name\>:\<your group name\> /DEC20 (or whatever you chose as directory name/location)
 
 e.g., `sudo chown hdtodd:hdtodd /DEC20` .
 
@@ -213,7 +213,7 @@ We'll install the `read20` program in your DEC20 production directory, too:
 * $make
 * $cp read20 /DEC20
 
-The other utilities are likely not useful, so we won't clutter /DEC20 with them.  But if you unziped your tapes in the `Tapes` subdirectory, you can now see what the tapes contain with, for example, `./read20 -t -f ../Tapes/BB-PBQUA-BM_1990.tap` .
+The other tapeutilities are likely not useful, so we won't clutter /DEC20 with them.  But if you unziped your tapes in the `Tapes` subdirectory, you can now see what the tapes contain with, for example, `./read20 -t -f ../Tapes/BB-PBQUA-BM_1990.tap` .
 
 ### Installing the TOPS-20 Systems Disk
 
