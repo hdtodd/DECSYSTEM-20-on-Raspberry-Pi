@@ -29,6 +29,9 @@ This installation is successful on Apple Mac OSX Sierra and Tahoe and on Raspber
 
 The setup processes for the Pi and the Mac differ, but once the tools are installed the processes are the same.  Use the appropriate following subsection (Pi or Mac) to prepare your host computer, then resume with gathering DECSYSTEM-20 tools.
 
+> [!TIP]
+> Assignment of IP addresses for your guest DEC20 is tricky if you have two network interfaces.  You'll want to assign in `klt20.ini` the interface to the _secondary_ interface of your host (e.g., `wlan0` if your host IP address is associated with `eth0` in your DNS tables or `/etc/hosts` file).
+
 ### Pi: Preparing to Compile and Host the DEC20
 
 1. Install Trixie on your Raspberry Pi: easiest to use the [Raspberry Pi Installer](https://www.raspberrypi.com/software/) and instructions
@@ -451,6 +454,9 @@ You need to have ENAbled operator privileges in order to shut the DEC20 down:
 ## Testing TCP/IP Connectivity
 
 Reboot your DEC20 system.  Type `^C` to get the command prompt. Log in as yourself.
+
+> [!WARNING]
+> If you are on a single-network-interface host, you may find that you can only connect to the guest DEC20 from _another_ computer.
 
 If you're running on a Pi as host, type:
 
