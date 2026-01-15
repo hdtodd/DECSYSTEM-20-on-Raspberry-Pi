@@ -425,13 +425,13 @@ $$max 100
 $$ [RETURN executes the commands]
 $
 ```
-Then establish additional logical definitions MX uses by adding these to the end of the file in \<system\>7-1-CONFIG.CMD:
+Then establish additional logical definitions MX uses by adding these to the end of the file in `<system>7-1-CONFIG.CMD`:
 ```
 DEFINE RUNMX: SYS:MX.EXE
 DEFINE UPS: PS:<MX>
 ```
 
-And finally, edit \<system\>sysjb1.run to add this line at the end (you can use [CNTL-J] or [RETURN] as the character to separate fields):
+And finally, edit `<system>sysjb1.run` to add this line at the end (you can use [CNTL-J] or [RETURN] as the character to separate fields):
 ```
 JOB 6 "LOGIN OPERATOR^JENABLE^JMX^J"
 ```
