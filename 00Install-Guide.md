@@ -317,6 +317,7 @@ Many commands offer guidewords and command word completion, and most accept abbr
 Following MRC's advice, create a personal account for yourself and give it access to privileges.  Log in as OPERATOR, and then:
 <sub>
 ```
+	@term vt102
 	@enable
 	$^Ecreate ps:<your username>  [that's a CONTROL-E key press to start]
 	[New]
@@ -342,7 +343,8 @@ You'll find it helpful to at least set your terminal characteristics at login ti
 Using the editor of your choice (EMACS in my case):
 
 ```
-	@ emacs login.cmd [tell emacs you're on a VT102]
+	@term vt102
+	@emacs login.cmd
 	term vt102
 	term width 80
 	term len 24
@@ -350,7 +352,7 @@ Using the editor of your choice (EMACS in my case):
 	@take login.cmd
 ```
 
-Your DELETE key will now backspace-erase letters when you press delete.  On your next login, that file will be executed automatically.
+On your next login, that file will be executed automatically.
 
 You've now seen the login "beware" message, so we can eliminate it:
 ```
