@@ -546,7 +546,7 @@ While klh10 supports the use of physical tape devices, you'll likely just use di
 TOPS20 uses the 'DUMPER' program to save/restore files and directories.  
 
 > [!caution]
-> **By default, the virtual magtape is mounted read-only**.
+> **By default, the virtual magtape is mounted read-only, and existing files cannot be mounted read/write!**.
 
 To mount a tape on a drive, use the `devmount` directive in `/DEC20/klt20.ini`. For example, to access one of the documentation tapes you might have downloaded earlier:
 
