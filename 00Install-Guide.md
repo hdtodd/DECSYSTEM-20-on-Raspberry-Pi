@@ -74,7 +74,7 @@ TOPS-20 only supports Telnet and FTP, which aren't up to modern security standar
 * $sudo apt-get install ftp (this is the client)
 * $sudo apt-get install telnetd (to install telnet service)
 * $sudo apt-get install vsftpd (to install secure ftp service)
-* $sudo update-inetd --enable telnet (to enable telnetd service); also edit `/etc/vsftpd.conf` to uncomment `write_enable=YES` to allow transfers to the host Pi
+* $sudo update-inetd --enable telnet (to enable telnetd service); also edit `/etc/vsftpd.conf` to uncomment `write_enable=YES` to allow transfers to the host Pi, then `sudo systemctl restart vsftpd`.
 
 Telnetd and vsFTPd are added as a system services and so start automatically.  Confirm that the Pi is offering telnet and FTP service by, for example, issuing the command to telnet and FTP to itself (where `<hostname>` is the name of your Pi in the `/etc/hosts` table).  For example:
 
